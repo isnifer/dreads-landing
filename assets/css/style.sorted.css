@@ -1,0 +1,132 @@
+/* Внешние шрифты */
+/* Глобальные стили */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.g-clf:after,
+.g-clf:before{
+  display: table;
+  clear: both;
+
+  content: '';
+}
+/* Обвязка */
+html,
+body{
+  font: normal 16px 'Arial', Verdana, Tahoma;
+
+  height: 100%;
+}
+.page{
+  position: relative;
+
+  min-height: 100%;
+}
+/* Шапка */
+.header{
+  font: bold 3em 'Georgia';
+  line-height: 1;
+}
+/* Сайдбар */
+/* Основной контент */
+.main{
+  display: block;
+}
+/* Подвал */
+/* Всплывающие, модальные окна */
+/* Responsive CSS */
+/* SuperSlides */
+#slides{
+  position: relative;
+}
+#slides .slides-container{
+  display: none;
+}
+#slides .scrollable{
+  position: relative;
+  top: 0;
+  left: 0;
+
+  overflow-y: auto;
+
+  height: 100%;
+
+  -webkit-overflow-scrolling: touch;
+}
+.slides-navigation{
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+
+  width: 100%;
+  margin: 0 auto;
+}
+.slides-navigation a{
+  font-size: 26px;
+  font-weight: bold;
+
+  position: absolute;
+  top: -40px;
+
+  display: block;
+  display: block;
+
+  width: 40px;
+  height: 40px;
+  margin: 0 25px;
+  padding: 1px;
+  padding-top: 5px;
+
+  -webkit-transition: background .15s ease;
+  -moz-transition: background .15s ease;
+  -o-transition: background .15s ease;
+  transition: background .15s ease;
+  text-align: center;
+  text-decoration: none;
+
+  color: #fff;
+  border: 3px solid #fff;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 1px 1px #000;
+  -moz-box-shadow: 0 1px 1px #000;
+  box-shadow: 0 1px 1px #000;
+  text-shadow: 0 1px 1px #000;
+
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.slides-navigation a.prev{
+  left: 0;
+}
+.slides-navigation a.next{
+  right: 0;
+}
+.slides-pagination{
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+.slides-pagination a{
+  display: inline-block;
+  overflow: hidden;
+
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+
+  text-indent: -100%;
+
+  border: 2px solid #222;
+  border-radius: 15px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+}
+.slides-pagination a.current{
+  background: #222;
+}
